@@ -12,8 +12,11 @@
         "mousekey": true,
         "nkro": true,
         "oled": true,
-        "pointing_device": true,
+        "pointing_device": false,
         "rgb_matrix": true
+    },
+    "build": {
+        "lto": true
     },
     "indicators": {
         "caps": "GP24"
@@ -23,7 +26,10 @@
         "soft_serial_pin": "GP0",
         "transport": {
             "sync": {
-                "layer_state": true
+                "layer_state": true,
+                "modifiers": true,
+                "wpm": true,
+                "indicators": true
             }
         }
     },
